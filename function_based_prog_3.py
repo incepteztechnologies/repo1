@@ -1,4 +1,3 @@
-#FUNCTION BASED PROGRAMMING (Python is a pure FBP Language)
 #What is a FBP - If we are giving high priority for functions and use functions in most of our programming rather than writing the
 # functionalities again and again for reducing the complexity. Simply say, FBP will help us convert our prog lang to
 # high level (10 lines of code) rather than low level (boiler plate coding 100 lines of code)

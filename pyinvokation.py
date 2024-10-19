@@ -1,5 +1,4 @@
 import pyapplication
-
 def main():
     calc = pyapplication.Calaculator()
     print("Select operation.")

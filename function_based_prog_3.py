@@ -10,7 +10,7 @@
 
 #FBP – Characteristics
 #Functions are first class citizens - Functions are given equal priority as like varibles
-var1=10
+var1=30
 var1=lambda arg:arg*arg
 var1(5)
 #Functions are not time bounded - We can call functions any number of times

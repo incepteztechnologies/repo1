@@ -9,7 +9,7 @@ arg1='gs://incpetez-data-samples/dataset/bqdata/ext_src_data/custs_header_202309
 arg2='incr'
 
 default_args = {"owner": "Inceptez Tech",
-                "start_date": datetime(2023, 9, 16),#From when this DAG has to start scheduled start_date=days_ago(1)
+                "start_date": datetime(2024, 10, 30),#From when this DAG has to start scheduled start_date=days_ago(1)
                 "email": "info@inceptez.com",
                 "email_on_failure": True,
                 "email_on_retry": True,

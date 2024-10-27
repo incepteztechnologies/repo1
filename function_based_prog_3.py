@@ -8,6 +8,8 @@
 #Functions are used to put some common and repeated task into a single name, so
 #instead of writing the same code again and again for different inputs, we can simply call the (name) function.
 
+
+#added lines
 #FBP – Characteristics
 #Functions are first class citizens - Functions are given equal priority as like varibles
 var1=50

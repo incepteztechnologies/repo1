@@ -1,0 +1,25 @@
+pipeline {
+  agent any
+  environment {
+    CLOUDSDK_CORE_PROJECT='civil-dolphin-435905-g2'
+    CLIENT_EMAIL='gcs-sa@civil-dolphin-435905-g2.iam.gserviceaccount.com'
+    GCLOUD_CREDS=credentials('civil-dolphin-key')
+  }
+  stages {
+    stage('copy_to_gcp') {
+      steps {
+        sh '''
+          ls -lrt
+          gcloud auth activate-service-account --key-file="$GCLOUD_CREDS"
+          gsutil cp *.py gs://iz-test-sample1/
+          echo 'File Copied into GCS bucket'
+        '''
+      }
+    }
+  }
+  post {
+    always {
+      sh 'gcloud auth revoke $CLIENT_EMAIL'
+    }
+  }
+}
